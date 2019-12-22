@@ -1,0 +1,203 @@
+
+.list{
+	float: left;
+}
+.product{
+	float: right;
+}
+
+#lienhe{
+  font-size: 18px;
+/*  margin: 15px 0px 0px 0px;*/
+padding-top: 30px;
+padding-right: 10px;
+
+}
+
+
+.bs3-thumbnail img{
+  width: 200px;
+  height: 200px;
+}
+/*#nav{
+  padding: 0px;
+  margin: 0px;
+}
+#menu
+{
+  margin: 0px;
+}*/
+
+#banner #loichao
+{
+  height: 40px;
+  background-color:#525E94  ;
+  color: #FFF;
+  padding-top: 10px;
+  padding-left: 52px;
+}
+.affix {
+      top: 0;
+      width: 75%; /*chỉnh độ rộng của thanh menu khi kéo trang xuống*/
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+  a{
+    color: #1B1919;
+   text-decoration: none;
+  }
+  a:hover{
+text-decoration: none;
+color: red;
+
+
+  }
+
+.carousel-inner{
+ 
+  padding: 0px;
+}
+#main{
+  margin-top: 20px;
+}
+#main #main_left h4{
+  background: #525E94 ;
+    margin-top: 0px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    text-indent: 20px; /*lùi vào đầu dòng 15px*/
+}
+#main #main_left ul li{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  height: 30px;
+  font-size: 20px;
+  
+}
+#main #main_left .dmuc1 , .dmuc2 , .dmuc3{
+background-color:  #BAC5FA;
+margin-bottom: 20px;
+padding-bottom: 10px;
+/*margin-top: 20px;*/
+}
+
+#main #main_left a:hover{
+  text-decoration: none;
+  
+}
+#main #main_right .row{
+  margin-bottom:25px;
+}
+#footer{
+   font-size: 18px;
+  padding-top: 30px;
+   background-color:  #BAC5FA;
+   padding-bottom: 30px;
+  }
+#main #main_right_tintuc .row{
+  margin-bottom: 40px;
+
+}
+.warning{
+
+  background-color: #BAC5FA;
+}
+.warning:hover{
+   color: #FFF;
+  background: #525E94;
+}
+#main #main_right_tintuc a:hover{
+  color: #525E94 ;
+}
+#row_lienhe{
+  margin-bottom: 25px;
+}
+#chitiet img{
+  width: 70px;
+  height: 90px;
+}
+#chitiet #row_chitiet{
+  padding-bottom: 20px;
+ 
+}
+#chitiet #row_chitiet a{
+  color:#525E94;
+  font-weight: bold;
+}
+#chitiet #row_chitiet img{
+  border: 1px solid;
+}
+
+#menu1  table{
+  border-top: 1px solid;
+  border-left: 1px solid;
+  width: 700px;
+  height: 400px;
+
+}
+#menu1  table td{
+   border-right: 1px solid;
+  border-bottom: 1px solid;
+  padding-left: 20px;
+}
+.sach img{
+  
+  width: 350px;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.chunoibat{
+  border: 1px solid ;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: #525E94 ;
+
+}
+.h4{
+  height: 3px;
+  margin-top: -5px;
+  background-color: #DAD7D7;
+}
+.special{
+   margin-top: 30px;
+}
+.nav-tabs{
+  font-weight: bold;
+
+}
+.nav-tabs li a:hover{
+  color: #FFFFFF;
+  background-color: #525E94 ;
+}
+#giohang{
+  margin-bottom: 20px;
+}
+#giohang .warning{
+  
+  background-color: #525E94;
+}
+#giohang .warning a{
+   color: #FFF;
+}
+#giohang .warning a:hover{
+   color: #FFF;
+  font-weight: normal;
+}
+#giohang .warning:hover{
+  background-color: #201F1F;
+  
+}
+.sach , .table_chitiet{
+  margin-top: 20px;
+}
+#menu2 h4{
+   margin-top: 20px;
+}

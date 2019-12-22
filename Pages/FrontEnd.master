@@ -1,0 +1,357 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontEnd.master.cs" Inherits="Pages_FrontEnd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="../CSS/bootstrap-3.3.7-dist/js/jquery-1.8.3.min.js"></script>
+    <script src="../CSS/bootstrap-3.3.7-dist/js/jquery-3.3.1.min.js"></script>
+    <script src="../CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../CSS/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link href="../CSS/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="banner-outside">
+            <div class="banner-left">
+                <a title="Free shipping" target="_blank" href="#">
+                    <img src="../Images/freeship.jpg" alt="Free shipping">
+                </a>
+            </div>
+
+            <div class="banner-left">
+                <a title="Free shipping" target="_blank" href="#">
+                    <img src="../Images/freeship.jpg" alt="Free shipping">
+                </a>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+
+            <div class="container-fluid">
+
+                <%--header--%>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="../Images/Logo_trai_BTLDao.jpg" style="height: 165px; width: 164px" />
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="../Images/banner-header-2_dao.jpg" style="width: 400px; margin-left: -56px; height: 160px" />
+                    </div>
+                    <div class="col-lg-4">
+                        <asp:TextBox ID="txtTimKiem" runat="server" placeholder="Nhập từ khóa..."></asp:TextBox>
+                        <asp:Button ID="btnTimKiem" runat="server" Text="Tìm Kiếm" CssClass="BtnTimKiem" OnClick="btnTimKiem_Click" />
+                    </div>
+                    <div style="float: right; margin-right: 50px; margin-top: 50px; box-sizing:border-box">
+                        <a href="Home.aspx?type=cart" class="aGioHangTong" title="giỏ hàng">
+                            <img src="../Images/cart.png" width="50" height="50" style="display: inline"/>
+                        </a>
+                        <div>
+                            <h5 style="color: deepskyblue; font-weight: bold; display: inline">Giỏ hàng</h5>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="clearfix"></div>
+
+                <%-- menu ngang--%>
+                <asp:Literal ID="ltrMenu" runat="server"></asp:Literal>
+                <div class="clearfix" style="padding-top: 5px; padding-bottom: 5px"></div>
+                <%--than--%>
+                <div class="main">
+                    <div class="main-left">
+                        <div class="box">
+                            <asp:ContentPlaceHolder ID="head" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div style="padding-top: 10px; clear: both;"></div>
+                    </div>
+                    <div class="main-right">
+                        <div class="sitebar-r">
+                            <div class="sitebar">
+                                <div class="box-sitebar">
+                                    <h4 class="bar-menu"><a href="#">Danh mục sản phẩm</a></h4>
+                                    <ul class="menu-r">
+                                        <asp:Literal ID="ltrMenuRight" runat="server"></asp:Literal>
+                                    </ul>
+                                    <br />
+                                    <br />
+                                    <%--Bai viet moi--%>
+                                    <div id="recent-posts-2" class="box-sitebar widget_recent_entries">
+                                        <h4 class="bar-menu">Bài viết mới</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="">Văn phòng phẩm giá rẻ ở Hà Nội – Tất tần tật về văn phòng phẩm</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Định mức văn phòng phẩm – Cách sử dụng văn phòng phẩm hiệu quả</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Công ty văn phòng phẩm Thiên Long &#8211; Tìm nhà phân phối cấp 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Trung Quốc – Sai lầm về văn phòng phẩm Trung Quốc</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dụng cụ văn phòng gồm những gì? Dụng cụ văn phòng là gì?</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Thiết bị văn phòng phẩm, các đồ dùng văn phòng phẩm phổ biến nhất</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Nam Từ Liêm – Ngõ 199 Hồ Tùng Mậu, Nam Từ Liêm</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Long Biên &#8211; Địa chỉ văn phòng phẩm Long Biên, Hà Nội</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Hoàng Mai, Hà Nội, giao hàng nhanh chóng, miễn phí</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Đống Đa &#8211; Mua văn phòng phẩm Đống Đa ở đâu?</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Tây Hồ &#8211; Thực trạng các nhà cung cấp văn phòng phẩm</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Hai Bà Trưng &#8211; Mua văn phòng phẩm ở đâu?</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Đại lý văn phòng phẩm tại Hà Nội &#8211; Văn phòng phẩm HTP Toàn Cầu</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Đại lý văn phòng phẩm &#8211; Nguồn hàng buôn văn phòng phẩm giá tốt</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Văn phòng phẩm Mỹ Đình, Từ Liêm &#8211; Mua văn phòng phẩm có hóa đơn đỏ</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Cung cấp văn phòng phẩm giá sỉ &#8211; Mẹo kinh doanh văn phòng phẩm</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Công ty văn phòng phẩm Hà Nội &#8211; Văn phòng phẩm HTP Toàn Cầu</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Công ty thiết bị văn phòng uy tín tại Hà Nội &#8211; Văn phòng phẩm HTP</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Các mặt hàng văn phòng phẩm, các loại văn phòng phẩm không thể thiếu</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Công ty sản xuất văn phòng phẩm &#8211; Thị trường văn phòng phẩm nội, ngoại</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <%--  Cau hoi thuong gap--%>
+
+                                    <div class="box-sitebar">
+                                        <h4 class="bg-sitebar sitebar-faq">Câu hỏi thường gặp</h4>
+                                        <ul class="faq">
+                                            <li><a href="https://vanphongphamhtp.vn/faq">Mua hàng online có hóa đơn đỏ không?</a></li>
+                                            <li><a href="https://vanphongphamhtp.vn/faq">Tôi muốn đặt thêm một số mặt hàng mới có được không ?</a></li>
+
+                                        </ul>
+                                    </div>
+
+
+                                    <%--     <div class="row" style="z-index: 1">
+                    <%--<div class="col-lg-9">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <img src="../Images/anh%20slide1.jpg" style="width: 100%" />
+                                <div class="text">Nội dung caption của slide đầu tiên!</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="../Images/anh%20slide%202.jpg" style="width: 100%" />
+                                <div class="text">Nội dung caption của slide thứ 2!</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="../Images/anh%20slide%203.jpg" style="width: 100%" />
+                                <div class="text">Nội dung caption của slide thứ 3!</div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center">
+                            <span class="dot" onclick="currentSlide(0)"></span>
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                        </div>
+                    </div>
+                    <div id="content"> other page here</div>
+                    <div class="col-lg-3 box">
+                        <div class="bar_menu">
+                            <h4>DANH MỤC SẢN PHẨM</h4>
+                        </div>
+                        <ul>
+                            <li><a href="#">BÚT CÁC LOẠI</a></li>
+                            <li><a href="#">DỤNG CỤ VĂN PHÒNG</a></li>
+                            <li><a href="#">FILE HỒ SƠ</a></li>
+                            <li><a href="#">GIẤY CÁC LOẠI</a></li>
+                            <li><a href="#">MÁY VĂN PHÒNG</a></li>
+                            <li><a href="#">SỐ CÁC LOẠI</a></li>
+                            <li><a href="#">TẠP HÓA PHẨM</a></li>
+                        </ul>
+                    </div>
+                </div>--%>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 10px; clear: both;"></div>
+                </div>
+                <div class="footer">
+                    <div class="box box-footer footer-links">
+                        <ul id="menu-menu-footer-1" class="">
+                            <li id=""><a title="Văn phòng phẩm là gì?" href="">Văn phòng phẩm là gì?</a></li>
+                            <li id=""><a title="Văn phòng phẩm HTP" href="">Văn phòng phẩm HTP</a></li>
+                            <li id="menu-item-5736" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5736"><a title="Giá bán văn phòng phẩm" href="">Giá bán văn phòng phẩm</a></li>
+                            <li id="menu-item-5739" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5739"><a title="Văn phòng phẩm tại Hà Nội" href="">Văn phòng phẩm tại Hà Nội</a></li>
+                            <li id="menu-item-5763" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5763"><a title="Văn phòng phẩm giá rẻ Hà Nội" href="">Văn phòng phẩm giá rẻ Hà Nội</a></li>
+                            <li id="menu-item-5733" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5733"><a title="Bán đồ văn phòng phẩm online" href="">Bán đồ văn phòng phẩm online</a></li>
+                            <li id="menu-item-5740" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5740"><a title="Đại lý văn phòng phẩm tại Hà Nội" href="">Đại lý văn phòng phẩm tại Hà Nội</a></li>
+                            <li id="menu-item-5735" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5735"><a title="Công ty cung cấp văn phòng phẩm" href="">Công ty cung cấp văn phòng phẩm</a></li>
+                            <li id="menu-item-5734" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5734"><a title="Bảng báo giá văn phòng phẩm mới nhất" href="">Bảng báo giá văn phòng phẩm mới nhất</a></li>
+                        </ul>
+                        <ul id="menu-menu-footer-2" class="">
+                            <li id="menu-item-5732" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5732"><a title="Các loại văn phòng phẩm" href="">Các loại văn phòng phẩm</a></li>
+                            <li id="menu-item-5743" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5743"><a title="Dụng cụ văn phòng phẩm" href="">Dụng cụ văn phòng phẩm</a></li>
+                            <li id="menu-item-5748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5748"><a title="Đồ dùng văn phòng phẩm" href="">Đồ dùng văn phòng phẩm</a></li>
+                            <li id="menu-item-5745" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5745"><a title="Mua bán văn phòng phẩm" href="">Mua bán văn phòng phẩm</a></li>
+                            <li id="menu-item-5742" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5742"><a title="Danh mục văn phòng phẩm" href="">Danh mục văn phòng phẩm</a></li>
+                            <li id="menu-item-5746" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5746"><a title="Phân phối văn phòng phẩm" href="">Phân phối văn phòng phẩm</a></li>
+                            <li id="menu-item-5744" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5744"><a title="Hộp kệ đựng văn phòng phẩm" href="">Hộp kệ đựng văn phòng phẩm</a></li>
+                            <li id="menu-item-5747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5747"><a title="Văn phòng phẩm giao hàng tận nơi" href="">Văn phòng phẩm giao hàng tận nơi</a></li>
+                            <li id="menu-item-5741" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5741"><a title="Cửa hàng văn phòng phẩm tại Hà Nội" href="">Cửa hàng văn phòng phẩm tại Hà Nội</a></li>
+                        </ul>
+                        <ul id="menu-menu-footer-3" class="">
+                            <li id="menu-item-5755" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5755"><a title="Văn phòng phẩm Kokuyo" href="">Văn phòng phẩm Kokuyo</a></li>
+                            <li id="menu-item-5751" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5751"><a title="Sản xuất văn phòng phẩm" href="">Sản xuất văn phòng phẩm</a></li>
+                            <li id="menu-item-5754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5754"><a title="Văn phòng phẩm Hàn Quốc" href="">Văn phòng phẩm Hàn Quốc</a></li>
+                            <li id="menu-item-5752" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5752"><a title="Văn phòng phẩm cute độc lạ" href="">Văn phòng phẩm cute độc lạ</a></li>
+                            <li id="menu-item-5750" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5750"><a title="Kinh doanh văn phòng phẩm" href="">Kinh doanh văn phòng phẩm</a></li>
+                            <li id="menu-item-5756" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5756"><a title="Văn phòng phẩm Plus Việt Nam" href="">Văn phòng phẩm Plus Việt Nam</a></li>
+                            <li id="menu-item-5753" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5753"><a title="Văn phòng phẩm Deli tại Hà Nội" href="">Văn phòng phẩm Deli tại Hà Nội</a></li>
+                            <li id="menu-item-5757" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5757"><a title="Văn phòng phẩm đồ dùng học sinh" href="">Văn phòng phẩm đồ dùng học sinh</a></li>
+                            <li id="menu-item-5749" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5749"><a title="Bán buôn văn phòng phẩm tại Hà Nội" href="">Bán buôn văn phòng phẩm tại Hà Nội</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="box box-footer">
+                        <div class="map">
+                            <h4>Bản đồ</h4>
+                            <div class="img">                              
+                              
+                                <img src="../Images/bando.PNG" style="height: 180px;" />
+                            </div>
+                            <%--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8068117939674!2d105.76163971568602!3d21.04041458599211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c0c8418329%3A0xbafd6a181721597c!2zQ8O0bmcgVHkgVE5ISCBUaMawxqFuZyBN4bqhaSBWw6AgROG7i2NoIFbhu6UgSFRQIFRvw6BuIEPhuqd1!5e0!3m2!1svi!2s!4v1536009564237" width="100%" height="180" frameborder="0" style="border: 0" allowfullscreen></iframe>--%>
+                        </div>
+                       
+                        <div class="footer-nav">
+                            <h4>Thông tin,  hỗ trợ</h4>
+                            <ul id="footer-menu" class="">
+                                <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="">FAQ</a></li>
+                                <li id="menu-item-5759" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5759"><a href="">Tin tức</a></li>
+                                <li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="">Khuyến mãi</a></li>
+                            </ul>
+                        </div>
+                        <div class="partner">
+                            <h4>Đối tác</h4>
+                            <ul class="l50">
+                                <li><a href="" title="Double A">
+                                    <img src="../Images/logo-double-a.png" /></a></li>
+                                <li><a href="" title="Plus">
+                                    <img src="../Images/plus.jpg" />
+                                  </a></li>
+                                <li><a href="" title="Thiên long">
+                                    <img src="../Images/thien-long.png" />
+                                 
+                                   </a></li>
+                                <li><a href="" title="Paper one">
+                                    <img src="../Images/paper_one.png" />
+                                  </a></li>
+                                <li><a href="" title="HP">
+                                    <img src="../Images/hp-logo.png" />
+                               </a></li>
+                                <li><a href="" title="CANNON">
+                                    <img src="../Images/canon-logo.png" />
+                                  </a></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                       <div class="clear"></div>
+                    <div class="footer-info">
+                    <strong class="strong">Công ty TNHH TM &amp; DV HTP Toàn Cầu</strong><br class="br" />
+                    <strong class="strong">Địa chỉ</strong> : Số 7/33 Ngõ 199 Hồ Tùng Mậu - Phường Cầu Diễn - Quận Nam Từ Liêm - Hà Nội<br class="br" />
+                    <strong>Hotline</strong>: <a href="tel:0969318982">0969 318 982</a>
+
+                    <strong>Điện thoại</strong>:0243.224.2898 - <strong class="strong">Hotline</strong>:0969 410 002  <strong>Điện thoại</strong>: 0243.797.0592
+
+                    <strong class="strong">Email </strong>: vpphtptoancau@gmail.com - <strong class="strong">Website</strong>
+
+                    <strong>Đối tác tin cậy:</strong>
+
+                    <a href="">Nội thất ô tô;</a>
+
+                    <a href="">Mỹ phẩm Vigo</a><br class="br" />
+                    <a class="dmca-badge" title="DMCA.com Protection Status" href="//www.dmca.com/Protection/Status.aspx?ID=3c5a5e1f-6625-488e-829d-ff0cae553fa4">
+                       
+                        <%--<img  src="../Images/dmca_protected_sml_120n.png"  alt="DMCA.com Protection Status" /></a>--%>
+                    <%--<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>--%>
+                </div>
+                 
+                </div>
+
+                <div class="clear"></div>
+            </div>
+       
+    </form>
+
+
+    <%--<script>
+        //khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex;
+        // KHai bào hàm hiển thị slide
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+                slideIndex = 0
+            }
+            //tự động chuyển đổi slide sau 5s
+            setTimeout(showSlides, 5000);
+        }
+        //mặc định hiển thị slide đầu tiên 
+        showSlides(slideIndex = 0);
+
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>--%>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+  margin: 0px auto;
+  padding: 0px auto;
+ font-size: 20px;
+}
+
+
+#nav{
+  font-size: 15px;
+}
+
+#content img{
+  width: 300px;
+  height: 420px;
+}
+
+
+.affix {
+      top: 0;
+      width: 60%;
+      z-index: 9999 !important;
+  }
+.dangnhap .btn{
+    color: #FFF;
+  background-color: #189eff;
+  font-size: 13px;
+  border: 1px solid #128DE6;
+ }
+
+
+ a:hover{
+  text-decoration: none;
+ }
+  .gthieusach h3{
+    font-weight: bold;
+  margin-bottom: 20px;
+ }
+ .gthieusach .sach{
+  background-color: #F3F1F1;
+  padding: 10px;
+ }
+ 
+.chitiet table{
+  width: 800px;
+  border-top: 1px solid;
+   border-left: 1px solid;
+}
+.chitiet table tr td{
+  border-right: 1px solid;
+   border-bottom: 1px solid;
+    padding: 10px 20px 0px 20px;
+}
+.chitiet table tr .td1{
+  padding-right: 30px;
+}
+.chitiet table tr .td{
+  background-color: #F3F1F1;
+}
+ .chitiet h3{
+    font-weight: bold;
+  margin-bottom: 20px;
+ }
+ footer{
+
+  background-color:  #BAC5FA;
+ }
+#tien{
+  font-size: 20px;
+ }
+ .gthieusach{
+   font-size: 20px;
+ }
+ .bang{
+  width: 350px;
+  height: 520px;
+  border: 1px solid;
+  background-color:  #BAC5FA;
+ }
+ .bang tr td{
+  padding-left: 10px;
+ }
+ .bang .tr1{
+  border-bottom: 1px solid;
+ }
+ .sach img{
+  width: 300px;
+   height :400px;
+   
+ }
+ 
